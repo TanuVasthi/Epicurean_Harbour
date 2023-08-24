@@ -130,16 +130,25 @@
     color: #0a3260;
     margin: auto;
   }
-  .image_blocks{
+  .image_blocks .images{
     display:flex;
-    justify-content: space-around;
     align-items: center;
-
-
+    justify-content: space-around;
   }
+  
   .image_blocks img{
-    width: 250px;
-    height: 250px;
+    width: 800px;
+    height: 500px;
+    margin:auto;
+  }
+  footer{
+    background-color: #004aad;
+    color: #d3dfef;
+    font-family: 'Poppins';
+    font-size: medium;
+  }
+  .contact a{
+    color: #f6f9fc;
   }
   @media screen and (max-width: 600px) {
     .logo{
@@ -158,6 +167,9 @@
     .slideshow-container{
       width:90%;
 
+    }
+    footer{
+      width:90%;
     }
   }
   @media screen and (max-width: 600px) {

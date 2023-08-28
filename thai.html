@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Thailand</title>
         <link rel="stylesheet" href="aat.css">
         <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,28 +15,15 @@
 
 </head>
 <body>
-    <header>
-        <div class="logo">
-          <img src="logo.jpg" alt="Not Found">
-        </div>
-        <div class="topnav" id="myTopnav">
-          <a href="#home" class="active">Home</a>
-          <a href="#contact">About</a>
-          <div class="dropdown">
-            <button class="dropbtn">Recipies
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </div>
-          <a href="#about">FAQs</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        </div>
-        
-    </header>
+  <header>
+    <div class="logo">
+      <img src="logo.jpg" alt="Not Found">
+    </div>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">Home</a>
+      <a href="Aboutus.html">About</a>
+      <a href="FAQ.html">FAQs</a>
+</header>
     <h1 class="head">"Savor the flavors of Thailand, from sweet to sour to salty to spicy."</h1>
     <br>
     <img src="padthai.png" height="300px" width="300px">
@@ -47,7 +34,11 @@
         A sweet and savory sauce,<br>
         That will make your taste buds sing.<br>
     </p>
-    <button type="button">Click here to know more......</button>
+    <button type="button" onclick="pad()">Click here to know more......</button>
+<script>
+        function pad(){
+            window.location.href="padthai.html";}
+</script>
     <br><br>
     <img src="greencurry.png" height="300px" width="300px">
     <h4 class="class">Green Curry!!</h4>
@@ -57,7 +48,11 @@
         The perfect food to share,<br>
         With friends and family near.<br>
     </p>
-    <button type="button">Click here to know more......</button>
+    <button type="button" onclick="gre()">Click here to know more......</button>
+<script>
+        function gre(){
+            window.location.href="greencurry.html";}
+</script>
     <br><br>
     <img src="msr.jpg" height="300px" width="300px">
     <h4 class="class">Mango Sticky Rice!!</h4>
@@ -67,7 +62,11 @@
         The mangoes are juicy and fresh,<br>
         With a hint of tartness.<br>
     </p>
-    <button type="button">Click here to know more......</button>
+    <button type="button" onclick="msr()">Click here to know more......</button>
+<script>
+        function msr(){
+            window.location.href="mangostickyrice.html";}
+</script>
     <br><br>
     <footer>
         <div class="copyright">
@@ -77,17 +76,7 @@
           For inquiries, contact us at <a href="mailto:contact@epicureanharbour.com">contact@epicureanharbour.com</a>
         </div>
       </footer>
-    <script>
-        function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-
-    </script>
+    
     
 </body>
 </html>

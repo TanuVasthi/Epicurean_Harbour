@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>China</title>
         <link rel="stylesheet" href="aat.css">
         <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,28 +13,15 @@
 
 </head>
 <body>
-    <header>
-        <div class="logo">
-          <img src="logo.jpg" alt="Not Found">
-        </div>
-        <div class="topnav" id="myTopnav">
-          <a href="#home" class="active">Home</a>
-          <a href="#contact">About</a>
-          <div class="dropdown">
-            <button class="dropbtn">Recipies
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </div>
-          <a href="#about">FAQs</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        </div>
-        
-    </header>
+  <header>
+    <div class="logo">
+      <img src="logo.jpg" alt="Not Found">
+    </div>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">Home</a>
+      <a href="Aboutus.html">About</a>
+      <a href="FAQ.html">FAQs</a>
+</header>
     <h1 class="head">"Discover the hidden treasures of Chinese food"</h1>
     <br>
     <img src="dimsum.png" height="300px" width="300px">
@@ -45,7 +32,12 @@
         To share with friends and family,<br>
         And enjoy in good company.<br>
     </p>
-    <button type="button">Click here to know more......</button>
+    <button type="button" onclick="dim()">Click here to know more......</button>
+<script>
+        function dim(){
+            window.location.href="dimsum.html";}
+</script>
+    
     <br><br>
     <img src="chowmain.png" height="300px" width="300px">
     <h4 class="class">Chowmain!!</h4>
@@ -55,7 +47,12 @@
         The chicken is tender and juicy,<br>
         The vegetables are crisp and fresh.<br>
     </p>
-    <button type="button">Click here to know more......</button>
+    <button type="button" onclick="chow()">Click here to know more......</button>
+<script>
+        function chow(){
+            window.location.href="chowmein.html";}
+</script>
+    
     <br><br>
     <img src="kung.png" height="300px" width="300px">
     <h4 class="class">Kung Pao Chicken!!</h4>
@@ -65,7 +62,12 @@
         A taste that's sure to excite,<br>
         Your taste buds with its thrills.<br>
     </p>
-    <button type="button">Click here to know more......</button>
+    <button type="button" onclick="ch()">Click here to know more......</button>
+<script>
+        function ch(){
+            window.location.href="kungpao.html";}
+</script>
+    
     <br><br>
     <footer>
         <div class="copyright">
@@ -75,17 +77,5 @@
           For inquiries, contact us at <a href="mailto:contact@epicureanharbour.com">contact@epicureanharbour.com</a>
         </div>
       </footer>
-    <script>
-        function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-
-    </script>
-    
 </body>
 </html>

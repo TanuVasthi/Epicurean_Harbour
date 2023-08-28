@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>USA</title>
         <link rel="stylesheet" href="aat.css">
         <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,23 +19,10 @@
           <img src="logo.jpg" alt="Not Found">
         </div>
         <div class="topnav" id="myTopnav">
-          <a href="#home" class="active">Home</a>
-          <a href="#contact">About</a>
-          <div class="dropdown">
-            <button class="dropbtn">Recipies
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </div>
-          <a href="#about">FAQs</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        </div>
-        
-    </header>
+          <a href="index.html" class="active">Home</a>
+          <a href="Aboutus.html">About</a>
+          <a href="FAQ.html">FAQs</a>
+   </header>
     <h1 class="head">"Experience the magic of American food, where tradition meets innovation."</h1>
     <br>
     <img src="cheesecake.png" height="300px" width="300px">
@@ -46,7 +33,11 @@
         With flavors of vanilla, lemon, or fruit,<br>
         To make it your own unique creation.<br>
     </p>
-    <button type="button">Click here to know more......</button>
+    <button type="button" onclick="cheesecake()">Click here to know more......</button>
+<script>
+        function cheesecake(){
+            window.location.href="cheesecake.html";}
+</script>
     <br><br>
     <img src="friedchicken.png" height="300px" width="300px">
     <h4 class="class">Fried Chicken!!</h4>
@@ -56,7 +47,13 @@
         Fried chicken is a delight,<br>
         No matter what the weather.<br>
     </p>
-    <button type="button">Click here to know more......</button>
+    
+    <button type="button" onclick="chicken()">Click here to know more......</button>
+<script>
+        function chicken(){
+            window.location.href="friedchicken.html";}
+</script>
+    
     <br><br>
     <img src="hamburger.png" height="300px" width="300px">
     <h4 class="class">Hamburger!!</h4>
@@ -66,7 +63,11 @@
         A culinary delight,<br>
         That's sure to please the whole squeal.<br>
     </p>
-    <button type="button">Click here to know more......</button>
+    <button type="button" onclick="bur()">Click here to know more......</button>
+<script>
+        function bur(){
+            window.location.href="hamburger.html";}
+</script>
     <br><br>
     <footer>
         <div class="copyright">
@@ -76,17 +77,6 @@
           For inquiries, contact us at <a href="mailto:contact@epicureanharbour.com">contact@epicureanharbour.com</a>
         </div>
       </footer>
-    <script>
-        function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-
-    </script>
     
 </body>
 </html>

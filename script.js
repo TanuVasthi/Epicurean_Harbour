@@ -1,14 +1,7 @@
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
+
 
   // Carousel
-  let slideIndex = 0;
+let slideIndex = 0;
 showSlides();
 
 function showSlides() {
